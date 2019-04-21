@@ -1,0 +1,567 @@
+.news
+  background-color: $news__color
+  &__title 
+    display: inline-block
+    font-size: 20px
+    +reqularP
+  &__subtitle
+    display: block
+    color: $header-span2
+    font-size: 11px
+    font-style: italic
+    margin: 12px 0
+  &__box 
+    &-link 
+      display: block
+      color: $slider__link
+      +reqularG
+      font-size: 14px
+      &:hover
+        color: $news__link-hover
+    &-text
+      color: $news__box-text
+      font-size: 12px
+      +reqularG
+      line-height: 18px
+    &-img 
+      width: 22px
+      height: 22px
+      margin-right: 8px
+  &__wrap
+    display: flex
+    justify-content: space-between
+    &-box1, &-box2, &-box3
+      width: 29%
+    &-box2 
+      margin-top: 40px
+    &-feedback  
+      display: flex
+      align-items: center
+.bottom
+  margin-bottom: 0
+.members
+  &__box
+    display: flex
+  &__slider 
+    width: 650px
+    height: 260px
+    background-color: $slider__menu-link
+    box-shadow: inset 0 0 43px rgba(0, 0, 0, 0.04)
+    &-item
+      position: relative
+      background-color: $slider__menu-link
+      width: 650px
+      height: 260px
+      box-shadow: inset 0 0 43px rgba(0, 0, 0, 0.04)
+      border: 1px solid $slider__subtitle
+    &-img1 
+      position: absolute
+      top: 9%
+      left: 23px
+    &-link1 
+      position: absolute
+      top: 8%
+      left: 18%
+      font-size: 14px
+      color: $slider__link
+    &-text1 
+      position: absolute
+      top: 20%
+      left: 18%
+      width: 30%
+      font-size: 10px
+      font-style: italic
+      +reqularG
+    &-img2 
+      position: absolute  
+      top: 10%
+      right: 40%
+    &-link2 
+      position: absolute
+      top: 9%
+      right: 20%
+      font-size: 14px
+      color: $slider__link
+    &-text2 
+      position: absolute
+      top: 20%
+      right: 57px
+      width: 30%
+      font-size: 10px
+      font-style: italic
+      +reqularG
+    &-img3 
+      position: absolute
+      bottom: 10%
+      left: 4%
+    &-link3 
+      position: absolute
+      bottom: 37%
+      left: 18%
+      font-size: 14px
+      color: $slider__link
+    &-text3 
+      position: absolute
+      bottom: 17%
+      left: 117px
+      width: 30%
+      font-size: 10px
+      font-style: italic
+      +reqularG
+    &-img4 
+      position: absolute  
+      bottom: 10%
+      right: 40%
+    &-link4 
+      position: absolute
+      bottom: 36%
+      right: 20%
+      font-size: 14px
+      color: $slider__link
+    &-text4 
+      position: absolute
+      bottom: 17%
+      right: 57px
+      width: 30%
+      font-size: 10px
+      font-style: italic
+      +reqularG
+  &__title
+    font-size: 20px
+    +reqularP
+  &__feedback
+    display: flex
+    align-items: center
+    &-img
+      width: 22px
+      height: 22px
+      margin-right: 8px
+    &-link 
+      color: $slider__link
+      font-size: 12px
+      +reqularG
+      &:hover
+        color: $news__link-hover
+    &-text
+      color: $header__language-link
+      font-size: 12px
+      +reqularG
+  &__news 
+    position: absolute
+    right: 165px
+    width: 26%
+    bottom: -26%
+  &__news2
+    position: absolute
+    right: 270px
+    bottom: -34%
+  &__news3
+    position: absolute
+    right: 270px
+    bottom: -42%
+.terms
+  &__box
+    display: flex
+    align-items: center
+    &-title 
+      margin-right: 14%
+      font-size: 20px
+      +reqularP
+    &-link
+      margin-right: 18px
+      font-size: 12px
+      +reqularG
+      color: $slider__link
+    &-link3
+      margin-left: 6%
+      font-size: 20px
+      +reqularG
+      color: #000
+    &-link2
+      margin-left: 6%
+      font-size: 12px
+      +reqularG
+      color: $slider__link
+    &-link, &-link2, &-link3
+      &:hover
+        color: $news__link-hover
+  &__list 
+    padding-left: 14px
+  &__text
+    width: 70%
+  &__participation
+    display: flex
+  &__organizer  
+    display: flex
+    flex-wrap: wrap
+    width: 30%
+    &-block 
+      display: flex
+    &-img1
+      width: 52px
+      height: 81px
+    &-img2
+      width: 46px
+      height: 74px
+    &-img3 
+      width: 121px
+      height: 56px
+    &-box, &-box2, &-box3
+      display: flex
+      align-items: center
+      justify-content: space-around
+    &-text
+      font-size: 11px
+      color: $header-span2
+      width: 45%
+    &-block
+      align-items: center
+      width: 40%
+    &-box3
+      flex-direction: column
+      width: 44%
+    &-title 
+      font-size: 16px
+      color: $header__text-link
+      +reqularG
+      margin-top: 0
+    &-subtitle
+      font-size: 12px
+      color: $header__text-link
+      +reqularG
+    &-box
+      justify-content: space-around
+    &-block2 
+      display: flex
+      width: 60%
+      align-items: center
+      justify-content: center
+
+@media(max-width: 1293px)
+  .members
+    &__news
+      right: 91px
+      bottom: -40%
+    &__news2
+      right: 121px
+      bottom: -49%
+    &__news3
+      right: 121px
+      bottom: -58%
+@media(max-width: 1280px)
+  .members
+    &__news2, &__news3
+      right: 119px
+@media(max-width: 1270px)
+  .members
+    &__news2, &__news3
+      right: 110px
+@media(max-width: 1240px)
+  .members
+    &__news2, &__news3
+      right: 104px
+@media(max-width: 1210px)
+  .members
+    &__news2, &__news3
+      right: 96px
+@media(max-width: 1200px)
+  .members
+    &__news
+      bottom: -53%
+    &__news2
+      bottom: -63%
+    &__news3
+      bottom: -72%
+@media(max-width: 1173px)
+  .members
+    &__news
+      right: 75px
+    &__news2, &__news3
+      right: 74px
+@media(max-width: 1143px)
+  .members
+    &__news2, &__news3
+      right: 63px
+@media(max-width: 1113px)
+  .members
+    &__news2, &__news3
+      right: 54px
+@media(max-width: 1077px)
+  .members
+    &__news2, &__news3
+      right: 47px
+@media(max-width: 1060px)
+  .members
+    &__news
+      right: 40px
+    &__news2, &__news3
+      right: 11px
+@media(max-width: 1038px)
+  .members
+    &__news2, &__news3
+      width: 25%
+      right: 49px
+    &__news2
+      bottom: -65%
+    &__news3
+      bottom: -77%
+@media(max-width: 1003px)
+  .members
+    &__news2
+      bottom: -67%
+    &__news3
+      bottom: -81%
+@media(max-width: 992px)
+  .members
+    &__news, &__news2, &__news3
+      position: static
+    &__box
+      display: flex
+      flex-direction: column
+  .terms
+    &__box
+      &-title
+        margin-right: 10px
+    &__organizer
+      &-block2 
+        margin-left: 20px
+      &-box2 
+        justify-content: space-between
+@media(max-width: 803px)
+  .terms
+    &__participation
+      flex-direction: column
+    &__organizer
+      width: 70%
+      justify-content: space-between
+      &-img3 
+        margin-right: 165px
+@media(max-width: 743px)
+  .terms
+    &__box
+      flex-direction: column
+      align-items: flex-start
+      &-link2, &-link3
+        margin: 0
+@media(max-width: 743px)
+  .members
+    &__slider
+      &-item
+        border: none
+@media(max-width: 703px)
+  .members
+    &__slider
+      width: 87%
+      &-img1
+        left: 10px
+      &-img3 
+        left: 2%
+      &-text3
+        left: 105px
+      &-img2
+        right: 34%
+      &-link2
+        right: 11%
+      &-text2
+        right: 13px
+      &-img4
+        right: 34%
+      &-link4
+        right: 11%
+      &-text4
+        right: 13px
+@media(max-width: 696px)
+  .members
+    &__slider
+      &-text3, &-text4
+        bottom: 12%
+@media(max-width: 646px)
+  .members
+    &__slider
+      &-link2, &-link4
+        right: 9%
+      &-link1
+        left: 19%
+      &-text1
+        left: 19%
+      &-link3
+        left: 19%
+  .terms
+    &__organizer
+      &-img3
+        margin-right: 20px
+@media(max-width: 610px)
+  .members
+    &__slider
+      width: 100%
+      &-link1, &-link3 
+        left: 18%
+      &-text1, &-text3
+        width: 26%
+        left: 18%
+      &-text1
+        top: 14%
+      &-link2, &-link4 
+        right: 19%
+      &-img2, &-img4
+        right: 41%
+      &-text2, &-text4
+        right: 60px
+@media(max-width: 588px)
+  .members
+    &__slider
+      &-link2, &-link4
+        right: 17%
+      &-text2, &-text4
+        right: 49px
+@media(max-width: 558px)
+  .members
+    &__slider
+      &-link2, &-link4
+        right: 10%
+      &-text2, &-text4
+        right: 17px
+      &-img2, &-img4 
+        right: 36%
+      &-link1, &-link3, &-text1, &-text3
+        left: 21%
+@media(max-width: 528px)
+  .members
+    &__slider
+      &-text3
+        bottom: 8%
+@media(max-width: 522px)
+  .members
+    &__slider
+      height: 300px
+      &-item
+        height: 300px
+      &-img1, &-img3
+        left: 20px
+      &-img3, &-img4
+        bottom: 7%
+      &-link1
+        top: 1%
+        left: 23%
+      &-img1, &-img2
+        top: 6%
+      &-text2, &-text4
+        right: 39px
+      &-link2, &-link4
+        right: 6%
+      &-img2, &-img4
+        right: 32%
+      &-link2
+        top: 1%
+      &-text2, &-text1
+        top: 9%
+      &-text3, &-text4
+        bottom: 3%
+      &-text1, &-text3
+        left: 23%
+      &-link3
+        bottom: 35%
+        left: 23%
+      &-link4
+        bottom: 25% 
+      &-text1, &-text2, &-text3, &-text4
+        width: 22%
+      &-link4
+        bottom: 35%
+@media(max-width: 484px)
+  .members
+    &__slider
+      &-link1, &-link3
+        left: 2%
+      &-text1, &-text3
+        left: 26%
+      &-text1, &-text2
+        top: 6%
+      &-link2, &-link4 
+        right: 27%
+      &-text3, &-text4
+        bottom: 6%
+@media(max-width: 464px)
+  .members
+    &__slider
+      &-link3, &-link4
+        bottom: 42%
+      &-img1, &-img2
+        top: 10%
+@media(max-width: 448px)
+  .members
+    &__slider
+      &-link1, &-link3, &-img1, &-img3
+        left: 0
+@media(max-width: 417px)
+  .members
+    &__slider
+      height: 600px
+      &-item
+        height: 600px
+      &-text1, &-text2
+        top: 20%
+      &-text1
+        left: 3%
+      &-text2
+        right: 38px
+      &-img1, &-img2
+        top: 6%
+      &-img3, &-img4
+        bottom: 39%
+      &-link3, &-link4
+        bottom: 55%
+      &-text3
+        left: 3%
+      &-text4
+        right: 38px
+      &-text3, &-text4
+        bottom: 19%
+      &-link2, &-link4
+        right: 10%
+      &-img2, &-img4
+        right: 14%
+@media(max-width: 402px)
+  .news
+    &__wrap
+      flex-wrap: wrap
+      &-box1, &-box2, &-box3
+        width: 50%
+@media(max-width: 394px)
+  .members
+    &__slider
+      &-text3, &-text4
+        bottom: 15%
+@media(max-width: 354px)
+  .news
+    &__wrap
+      width: 90%
+@media(max-width: 343px)
+  .members
+    &__slider
+      &-link2, &-link4
+        right: 0
+      &-img2, &-img4
+        right: 6%
+      &-text2, &-text4
+        right: 17px
+@media(max-width: 339px)
+  .members
+    &__slider
+      &-img2, &-img4 
+        right: 0
+@media(max-width: 329px)
+  .news
+    &__wrap
+      &-box1, &-box2, &-box3 
+        width: 100%
+      
+
+
+
+
+  
+  
+
+
+    

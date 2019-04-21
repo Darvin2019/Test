@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/Georgia.eot');
+  src: url('../fonts/Georgia.eot') format('embedded-opentype'),
+    url('../fonts/Georgia.woff') format('woff'),
+    url('../fonts/PermianSlabSerifTypeface.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'PermianSlabSerifTypeface';
+  src: url('../fonts/PermianSlabSerifTypeface.eot');
+  src: url('../fonts/PermianSlabSerifTypeface.eot') format('embedded-opentype'),
+    url('../fonts/PermianSlabSerifTypeface.woff') format('woff'),
+    url('../fonts/PermianSlabSerifTypeface.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'PermianSlabSerifTypeface-Bold';
+  src: url('../fonts/PermianSlabSerifTypeface-Bold.eot');
+  src: url('../fonts/PermianSlabSerifTypeface-Bold.eot') format('embedded-opentype'),
+    url('../fonts/PermianSlabSerifTypeface-Bold.woff') format('woff'),
+    url('../fonts/PermianSlabSerifTypeface-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@mixin reqularG {
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
+}
+
+@mixin reqularP {
+  font-family: 'PermianSlabSerifTypeface', sans-serif;
+  font-weight: 400;
+}
+
+@mixin bold {
+  font-family: 'PermianSlabSerifTypeface-Bold', sans-serif;
+  font-weight: 700;
+}

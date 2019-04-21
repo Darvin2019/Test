@@ -1,0 +1,107 @@
+.partners
+  background-color: $header__navigation-link
+  &__text
+    display: block
+    font-size: 10px
+    color: $partners__text
+  &__list
+    list-style-type: none
+    margin-left: 100px
+  &__link 
+    font-size: 22px
+    color: $partners__color
+    text-decoration: none
+    &:hover
+      color: $news__link-hover
+  &__item
+    position: relative
+    +reqularP
+  &__box1
+    &-wrap
+      width: 15%
+      display: inline-block
+  &__box
+    transition: 0.2s
+    transform: translateX(100%)
+    height: 30px
+    &:target
+      transform: translateX(0)
+      height: 500px
+      display: flex
+      flex-wrap: wrap
+      text-align: center
+      margin-top: 50px
+  &__close
+    &-btn 
+      position: fixed
+      top: -70px
+      right: 10px
+      color: $slider__menu-link
+      font-size: 20px
+      text-decoration: none
+      border: 1px solid $slider__menu-link
+      padding: 5px 10px
+  &__box1, &__box2, &__box3
+    display: flex
+    align-items: baseline
+  &__img  
+    display: inline-block
+    margin-bottom: 30px
+@media(max-width: 1097px)
+  .partners
+    &__box1
+      &-wrap
+        width: 17%
+@media(max-width: 1004px)
+  .partners
+    &__list
+      padding: 0
+      margin-left: 0
+@media(max-width: 783px)
+  .partners
+    &__box1, &__box2, &__box3
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__box
+      &:target
+        height: 100%
+        align-items: center
+@media(max-width: 717px)
+  .partners
+    &__img
+      margin-bottom: 11px
+@media(max-width: 660px)
+  .partners
+    &__box1, &__box2, &__box3
+      align-items: flex-start
+@media(max-width: 646px)
+  .partners
+    &__box1, &__box2, &__box3
+      width: 30%
+@media(max-width: 548px)
+  .partners
+    &__box
+      &:target
+        justify-content: center
+        align-items: baseline
+    &__img
+      margin-top: 11px
+@media(max-width: 494px)
+  .partners
+    &__box1, &__box2, &__box3
+      width: 50%
+    &__box
+      justify-content: center
+      align-items: center
+      &:target  
+        width: 80%
+        padding-left: 60px
+@media(max-width: 363px)
+  .partners
+    &__box1, &__box2, &__box3
+      width: 100%
+  
+ 
+
+  
